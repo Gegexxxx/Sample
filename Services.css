@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #FFE6E6;  
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+img{
+    max-width: 100%;
+}
+/*Navigation section*/
+header{
+    width: 100%;
+    background-color: black;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.nav img{
+    height: 80px;
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-ul li a{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-left: 24px;
+    color: #FFE6E6;
+}
+.nav-ul li a:hover{
+    border-bottom: 3px solid black;
+    transition: .3s;
+}
+
+.hamburger, #close{
+    color: #FFE6E6;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 15px 30px 0 0;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+    color:  red;
+}
+.section-1{
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.heading{
+    display: flex;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+.heading-contents{
+    display: flex;
+    margin-top: -2px;
+    background-color: #dfb5b5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.department{
+    margin-left: 180px;
+}
+.courses{
+    margin-left: 110px;
+}
+h3{
+    padding: 5px;
+    color: red;
+}
+.nat{
+    color: black;
+}
+li{
+    list-style: none;
+    line-height: 30px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+a:hover{
+    font-size: 25px;
+    transition: .3s;
+    border-bottom: 2px solid red;
+}
+.flower{
+    height: 200px;
+    width: 100vw;
+
+    opacity: .6;
+}
+.wrap{
+    margin-top: -150px;
+}
+
+/*DANTOWER RESOURCES, JUST BEFORE THE FOOTER*/
+h2,h5{
+    line-height: 25px;
+    text-align: center;
+}
+h2{
+    margin-top: 40px;
+}
+
+main{
+    background-color: #C4C8E1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* THE FOOTER*/
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+h3{
+    color: RED
+}
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+    color: #FFE6E6;
+    line-height: 35px;
+    
+}
+.hr-1{
+    margin-top: 30px;
+}
+
+/*Media Querry*/
+@media  screen and (max-width: 500px){
+    .nav-ul{
+        width: 100%;
+        max-width: 30%;
+        flex-direction: column;
+        display: none;
+    }
+    #close{
+        font-size: 15px;
+    }
+    .nav-ul li a{
+        font-size: 15px;
+        line-height: 5px;
+    }
+    #home{
+        margin-top: px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav-ul #close{
+        display: block;
+
+    }
+    .show{
+        display: flex;
+    }
+    .hide{
+        display: none;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
